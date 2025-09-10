@@ -1,0 +1,45 @@
+Monitoring
+
+Definition: Monitoring is about collecting and displaying predefined metrics and logs to check the health and performance of a system.
+
+Approach: Reactive → You set alerts and dashboards for known issues.
+
+Example:
+
+CPU usage > 90% alert
+
+Number of failed API requests
+
+Memory consumption over time
+
+Goal: Detect when something is wrong based on known failure modes.
+
+
+
+2. Observability
+
+Definition: Observability is the ability to understand the internal state of a system just by looking at the outputs (metrics, logs, traces).
+
+Approach: Proactive → It helps answer unknown unknowns (issues you didn’t anticipate).
+
+Example:
+
+Instead of just knowing “API error rate is high,” observability lets you trace the error back through microservices, databases, and queues.
+
+You can ask: Why did this request fail? Where in the system is the bottleneck?
+
+Goal: Give engineers deep visibility so they can debug, explore, and solve new problems.
+
+Key Differences
+Aspect	Monitoring 🖥️	Observability 🔍
+Focus	Known issues (reactive)	Unknown issues (proactive, exploratory)
+Data	Metrics, logs	Metrics, logs, traces (3 pillars)
+Questions	“Is it working?”	“Why is it not working?”
+Usage	Alerts and dashboards	Debugging, root-cause analysis
+Scope	Narrow, health-check style	Broad, deep system understanding
+
+👉 In short:
+
+Monitoring = Knowing when something is broken.
+
+Observability = Understanding why it’s broken and how to fix it.
